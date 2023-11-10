@@ -1,0 +1,23 @@
+id: c57a799c-240d-4f47-a0b5-70a877241dbe
+timestamp: 2023-11-10T10:43:50.657Z
+source: INTELLIJ
+username: kzhelyazkova
+accelerator:
+  name: tanzu-java-web-app
+fragments:
+  - name: build-wrapper-gradle
+  - name: build-wrapper-maven
+  - name: devcontainer
+  - name: java-version
+  - name: tap-workload
+options:
+  bsGitBranch: main
+  javaVersion: 11
+  bsGitRepository: github.com?owner=kzhelyazkova&repo=my-tanzu-app
+  ide: intellij
+  includeDevContainer: false
+  nativeBuild: false
+  includeBuildToolWrapper: true
+  buildTool: maven
+  springBootVersion: 2.7
+  projectName: my-tanzu-app
