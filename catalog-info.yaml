@@ -2,9 +2,16 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: my-tanzu-app
+  description: Tanzu Java Web App
+  tags:
+    - app-accelerator
+    - java
+    - spring
+    - web
+    - tanzu
   annotations:
-    github.com/project-slug: kzhelyazkova/my-tanzu-app
+    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=my-tanzu-app'
 spec:
-  type: other
-  lifecycle: unknown
-  owner: team
+  type: service
+  lifecycle: experimental
+  owner: default-team
